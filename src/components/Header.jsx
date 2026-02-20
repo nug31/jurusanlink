@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Layout, Clock, LogOut, Sun, Moon } from 'lucide-react';
+import { Link, Clock, LogOut, Sun, Moon } from 'lucide-react';
 
 const Header = ({ theme, toggleTheme }) => {
     const [time, setTime] = useState(new Date());
@@ -28,7 +28,7 @@ const Header = ({ theme, toggleTheme }) => {
     return (
         <header className="header">
             <div className="logo-section">
-                <Layout size={32} />
+                <Link size={32} />
                 <h1 className="shimmer-text">JURUSAN LINK</h1>
             </div>
 
