@@ -32,16 +32,16 @@ const Header = ({ theme, toggleTheme }) => {
                 <h1 className="shimmer-text">JURUSAN LINK</h1>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+            <div className="header-right">
                 <div className="time-section">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'flex-end' }}>
+                    <div className="time-row">
                         <Clock size={16} />
-                        <span style={{ fontWeight: 700 }}>{formatTime(time)}</span>
+                        <span>{formatTime(time)}</span>
                     </div>
-                    <div>{formatDate(time)}</div>
+                    <div className="date-row">{formatDate(time)}</div>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div className="header-actions">
                     <button className="theme-toggle" onClick={toggleTheme} title="Toggle Theme">
                         {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
                     </button>

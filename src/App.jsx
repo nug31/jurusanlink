@@ -112,7 +112,7 @@ function App() {
   })).filter(cat => cat.links.length > 0);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-main)' }}>
+    <div style={{ minHeight: '100vh', position: 'relative' }}>
       <Header theme={theme} toggleTheme={toggleTheme} />
 
       <main className="dashboard">
